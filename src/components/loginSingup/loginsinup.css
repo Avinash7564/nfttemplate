@@ -1,25 +1,91 @@
 .login-page {
-    color: aliceblue;
+  color: aliceblue;
 }
-.login-page-content{
+.login-page-content {
+  padding: 15px 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+@media screen and (min-width: 1240px) {
+  .login-page {
+    display: flex;
+  }
+  .login-page-image {
+    width: 50%;
+  }
+  .login-page-content {
     padding: 15px 100px;
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    margin: auto;
+  }
 }
-                                             
-@media screen and (min-width: 1240px) {
-    .login-page {
-        display: flex;
-    }
-    .login-page-image {
-        width: 50%;                                               
-    }
-    .login-page-content {
-        padding: 15px 100px;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-    }
+@media screen and (max-width: 1240px) {
+  .login-page-content {
+    padding: 15px 100px;
+    width: 50%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+}
+
+.login-page-inputBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 12px;
+  width: 330px;
+  height: 36px;
+  background: #ffffff;
+  border: 1px solid #858584;
+  border-radius: 20px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin-bottom: 20px;
+}
+.login-page-inputBox > input {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  width: 90%;
+}
+.login-page-create-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  gap: 12px;
+  width: 355px;
+  height: 46px;
+  background: #a259ff;
+  border-radius: 20px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.login-page-create-button > span {
+  width: 121px;
+  height: 22px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }

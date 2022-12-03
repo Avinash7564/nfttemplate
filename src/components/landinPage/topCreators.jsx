@@ -52,7 +52,7 @@ function TopCreators() {
                   {creatorName}
                 </h2>
                 <p style={{ marginTop: "10px", display: "flex" }}>
-                  <span style={{ color: "grey" }}>Total Sales: &nbsp;</span>{" "}
+                  <span style={{ color: "grey" }}>Total Sales:</span>
                   {totalSales}
                 </p>
               </div>

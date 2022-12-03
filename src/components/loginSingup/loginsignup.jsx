@@ -14,8 +14,8 @@ function Loginsignup() {
       <div className="login-page-content">
         <h1>Create Account</h1>
         <p>
-          Welcome! Enter Your Details And Start Creating, Collecting And Selling
-          Nfts.
+          Welcome! Enter Your Details And <br />
+          Start Creating, Collecting And Selling Nfts.
         </p>
         <div className="login-page-inputBox">
           <i></i>

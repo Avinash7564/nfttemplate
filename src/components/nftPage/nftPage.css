@@ -1,0 +1,102 @@
+.nftpage-image-holder{
+    align-self: stretch;
+        background-color: transparent;
+        background-image: url(https://s3-alpha-sig.figma.com/img/85c0/8b92/890ad3bb78d42a6892b85871b782b103?Expires=1670803200&Signature=MGgDXBJTj5ZWYZDsUeXWAO28LAHtEer~qXhGmw9fyb0cNd13WhYt-IAv~j-~ryKDEGZrH27zWnPGmAfbO8JZOvCd41QFXR7y9JXIV9~Kima-y5-AQeKl6Vhm-F7Pqz5OLWTxgrrvZZJVkUiqecwll6BfYUYQ61MffRkghlXOxRCzuw25TUH2RL3RFphQShX0j7MO4h7fOs~U~yys8PH4dVrHwpttJtaqP-fJhkGbCxRlesMNFntwhyj27XUL9SgEXtWkvN3r1oGhqEupsK4iWBkTCl6i~BGNMfSoDQCRu3aS25X6yoS717CSBd9-dxpAutI7b9wxKdIQ~NLwFgQiag__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+        background-position: 50% 50%;
+        background-size: cover;
+        border: 1px none;
+        height: 560px;
+        min-width: 1280px;
+        mix-blend-mode: normal;
+        position: relative;
+}
+.nft-page-details-section {
+    width: 70%;
+    margin: auto;
+}
+.other-details {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 30px;
+}
+
+.other-details-top-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    font-family: 'Work Sans';
+    font-style: normal;
+}
+
+.other-details-top-div-div {width: 605px;
+    height: 56px;
+    font-weight: 600;
+    font-size: 51px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.other-details-top-div-p {
+    width: 605px;
+    height: 35px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: #858584;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.deatils-description {
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+}
+.deatils-description-heading {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 35px;
+    text-transform: capitalize;
+    color: #858584;
+    flex: none;
+    order: 0;
+}
+.deatils-description-deatils {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 35px;
+        color: #FFFFFF;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+}

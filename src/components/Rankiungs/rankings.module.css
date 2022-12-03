@@ -1,0 +1,13 @@
+.rankingDetails:hover {
+    transform: scale(0.98) rotate(0.01deg);
+}
+.rankingDetails{
+    display: flex;
+    padding: 0px 10px;
+    border-radius: 20px;
+    background: #3b3b3b;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}

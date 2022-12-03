@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+body {
+  background-color: #2B2B2B;
+  font-family: 'Space Mono', monospace;
+}
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +39,49 @@
   to {
     transform: rotate(360deg);
   }
+}
+.top-craetors-card{
+  background: #3B3B3B;
+  border-radius: 20px;
+  color: white;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.top-craetors-card:hover {
+  transform: scale(0.9) rotate(0.01deg);
+}
+ .top-creators {align-items: center;
+  background-color: var(--background---secondary);
+  border: 1px none;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 20px;
+  pointer-events: auto;
+  color: white;
+ }
+
+.top-creators-img{
+  background-color: transparent;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.top-creators-div{
+  width: 60vw;
+  align-items: center;
+  justify-content: center;
+    background-color: transparent;
+    border: 1px none;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 30px;
+    margin: auto;
+    height: auto;
+}
+.font-link {
+  font-family: 'Space Mono', monospace;
 }

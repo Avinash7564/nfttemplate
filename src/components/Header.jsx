@@ -23,7 +23,9 @@ export const Header = () => {
         <Link to="/rankings">
           <h6 style={{ color: "white" }}>Rankings</h6>
         </Link>
-        <h6>Connect a wallet</h6>
+        <Link to="/connectWallet">
+          <h6 style={{ color: "white" }}>Connect a wallet</h6>
+        </Link>
         <Link to="/loginsignup">
           <button className="nav-right-button">
             <i class="bi bi-person"></i> <strong>sign up</strong>

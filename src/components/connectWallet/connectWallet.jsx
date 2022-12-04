@@ -4,7 +4,7 @@ import "../loginSingup/loginsinup.css";
 function ConnectWallet() {
   return (
     <div className="login-page">
-      <div className="login-page-image">
+      <div className="connect-wallet-page-image">
         <img
           src="https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/637e564ca17e9f3ed8e13520/img/image-placeholder-158@1x.png"
           alt="Image Placeholder"

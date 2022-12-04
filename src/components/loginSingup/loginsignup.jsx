@@ -1,6 +1,6 @@
 import React from "react";
 import "./loginsinup.css";
-import { redirect, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { CgProfile } from "react-icons/cg";
 import { AiOutlineMail } from "react-icons/ai";
 import { MdLockOutline } from "react-icons/md";
@@ -38,7 +38,7 @@ function Loginsignup() {
       <div className="login-page-image">
         <img
           src="https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/637e564ca17e9f3ed8e13520/img/image-placeholder-163@1x.png"
-          alt="Image Placeholder"
+          alt="ImagePlaceholder"
           style={{ width: "100%", height: "691px" }}
         />
       </div>

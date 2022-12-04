@@ -14,7 +14,7 @@ function MoreNftsCard(props) {
       >
         <img
           src={img}
-          alt="Image Placeholder"
+          alt="ImagePlaceholder"
           style={{ width: "100%", height: "65%" }}
         />
         <div style={{ padding: "10px 10px 10px 20px" }}>

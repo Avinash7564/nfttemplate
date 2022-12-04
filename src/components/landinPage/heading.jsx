@@ -38,7 +38,7 @@ function Heading() {
       <div className="top-headers top-header-image">
         <img
           src="	https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/files/heroanimationtransparentbck-2.gif"
-          alt="Image Placeholder"
+          alt="ImagePlaceholder"
           style={{ height: "510px" }}
         />
       </div>

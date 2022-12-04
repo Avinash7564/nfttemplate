@@ -7,7 +7,7 @@ import ArtistCard from "../../components/commons/artistCard";
 
 function TopCreators() {
   return (
-    <div>
+    <div style={{ marginTop: "80px" }}>
       <div className="landing-trending-header">
         <h1>Top Creators</h1>
         <div className="nft-flex top-creators-flag-view">

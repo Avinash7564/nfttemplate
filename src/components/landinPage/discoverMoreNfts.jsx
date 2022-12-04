@@ -6,7 +6,7 @@ import MoreNftsCard from "../commons/moreNftsCard";
 function DiscoverMoreNfts() {
   const data = topCreators.slice(0, 3) || [];
   return (
-    <>
+    <div style={{ marginTop: "80px" }}>
       <div className="landing-trending-header">
         <h1>Discover More Nfts</h1>
         <div className="nft-flex top-creators-flag-view">
@@ -30,7 +30,7 @@ function DiscoverMoreNfts() {
           );
         })}
       </div>
-    </>
+    </div>
   );
 }
 

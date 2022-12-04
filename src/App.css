@@ -45,7 +45,6 @@ body {
   }
 }
 .top-creators-card-top {
-  padding-top: 60px;
   display: grid;
   width: 60%;
   grid-template-columns: 32% 32% 32%;

@@ -22,6 +22,7 @@ function DiscoverMoreNfts() {
           gridTemplateColumns: "32% 32% 32%",
           gridGap: "2%",
           margin: "auto",
+          marginBottom: "20px",
         }}
       >
         {data.map((item, index) => {

@@ -1,6 +1,6 @@
 import React from "react";
 import "./loginsinup.css";
-import { redirect } from "react-router-dom";
+import { redirect, useNavigate } from "react-router-dom";
 import { CgProfile } from "react-icons/cg";
 import { AiOutlineMail } from "react-icons/ai";
 import { MdLockOutline } from "react-icons/md";
@@ -11,6 +11,7 @@ function Loginsignup() {
   const [mail, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [confirmPass, setConfirmPass] = useState("");
+  let navigate = useNavigate();
 
   const handleAdd = () => {
     if (pass === confirmPass) {
@@ -25,10 +26,11 @@ function Loginsignup() {
       setEmail("");
       setPass("");
       setConfirmPass("");
+      alert("Logged In");
+      navigate("/");
     } else {
       alert("Password and Confirm Password did'nt match");
     }
-    return redirect("/");
   };
 
   return (

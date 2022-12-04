@@ -116,7 +116,7 @@ export default function Rankings() {
                   <p
                     style={{
                       marginLeft: "15px",
-                      fontSize: "15px",
+                      fontSize: "22px",
                       color: "white",
                       fontWeight: "400",
                     }}
@@ -124,11 +124,11 @@ export default function Rankings() {
                     {item.artist}
                   </p>
                 </div>
-                <p style={{ color: "#00AC4F", fontSize: "14px" }}>
+                <p style={{ color: "#00AC4F", fontSize: "22px" }}>
                   {item.change}
                 </p>
-                <p style={{ fontSize: "14px" }}>{item.nft}</p>
-                <p style={{ fontSize: "14px" }}>{item.volume}</p>
+                <p style={{ fontSize: "22px" }}>{item.nft}</p>
+                <p style={{ fontSize: "22px" }}>{item.volume}</p>
               </div>
             ))}
           </div>

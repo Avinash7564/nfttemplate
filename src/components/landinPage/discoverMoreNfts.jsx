@@ -18,13 +18,14 @@ function DiscoverMoreNfts() {
         </div>
       </div>
       <div className="top-creators-card-top">
-        {data.map((item) => {
+        {data.map((item, index) => {
           const { img = "", creatorName = "", totalSales = "" } = item;
           return (
             <MoreNftsCard
               img={img}
               creatorName={creatorName}
               totalSales={totalSales}
+              index={index}
             />
           );
         })}

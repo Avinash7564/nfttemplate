@@ -1,9 +1,9 @@
 import React from "react";
 
 function MoreNftsCard(props) {
-  const { img = "", creatorName = "", totalSales = "" } = props;
+  const { img = "", creatorName = "", totalSales = "", index = "" } = props;
   return (
-    <div>
+    <div key={index}>
       <div
         style={{
           backgroundColor: "#3B3B3B",

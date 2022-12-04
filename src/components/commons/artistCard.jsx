@@ -3,7 +3,7 @@ import React from "react";
 function ArtistCard(props) {
   const { img = "", creatorName = "", totalSales = "", index } = props;
   return (
-    <div className="top-craetors-card">
+    <div className="top-craetors-card" key={index}>
       <div
         style={{
           display: "flex",

@@ -1,5 +1,6 @@
 import React from "react";
 import "./loginsinup.css";
+import { redirect } from "react-router-dom";
 import { CgProfile } from "react-icons/cg";
 import { AiOutlineMail } from "react-icons/ai";
 import { MdLockOutline } from "react-icons/md";
@@ -27,6 +28,7 @@ function Loginsignup() {
     } else {
       alert("Password and Confirm Password did'nt match");
     }
+    return redirect("/");
   };
 
   return (

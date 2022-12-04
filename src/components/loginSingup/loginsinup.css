@@ -9,12 +9,12 @@
   margin: auto;
 }
 
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 640px) {
   .login-page {
     display: flex;
   }
   .login-page-image {
-    width: 50%;
+    width: 100%;
   }
   .login-page-content {
     padding: 15px 100px;
@@ -121,4 +121,8 @@
     margin: auto;
     flex-direction: column;
   }
+}
+.login-page-icon {
+  color: #858584;
+  font-size: 22px;
 }

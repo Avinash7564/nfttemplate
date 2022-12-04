@@ -1,24 +1,35 @@
-.landing-header {
-  width: 60%;
-  margin: auto;
-  display: flex;
-  color: #ffffff;
-  margin-bottom: 50px;
+@media screen and (max-width: 640px) {
+  .landing-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .landing-header {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    color: #ffffff;
+    margin-bottom: 50px;
+  }
 }
-.top-headers {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
-.top-header-image {
-  border-radius: 20px;
-  position: relative;
-}
-.top-header-image > img {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+@media screen and (min-width: 640px) {
+  .top-header-image > img {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-35%);
+  }
+  .top-headers {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .landing-header {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    color: #ffffff;
+    margin-bottom: 50px;
+  }
 }
 .top-headers-content > h1 {
   font-style: normal;
@@ -44,6 +55,8 @@
   height: 60px;
   background: #a259ff;
   border-radius: 20px;
+  color: #ffffff;
+  font-size: 22px;
 }
 .top-headers-content-button:hover {
   transition: all 0.5s ease;
@@ -85,6 +98,8 @@
   border-radius: 20px;
   background-color: #2b2b2b;
   cursor: pointer;
+  font-size: 22px;
+  color: #a259ff;
 }
 .top-creators-flag-view-rankings > span {
   font-family: "Work Sans";

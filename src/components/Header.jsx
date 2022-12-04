@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Styles.css";
+import { BiMenu } from "react-icons/bi";
 
 export const Header = () => {
   return (
@@ -16,9 +17,12 @@ export const Header = () => {
           <p style={{ color: "#ffffff" }}>NFT Marketplace</p>
         </div>
       </Link>
+      <div className="nav-right-icon">
+        <BiMenu />
+      </div>
       <div className="nav-right">
         <Link to="/nftpage">
-          <h6 style={{ color: "white" }}>Marketplace</h6>
+          <h6 style={{ color: "white" }}>Trending Collection</h6>
         </Link>
         <Link to="/rankings">
           <h6 style={{ color: "white" }}>Rankings</h6>

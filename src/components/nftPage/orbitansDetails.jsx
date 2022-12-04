@@ -1,38 +1,6 @@
-// import React from 'react'
-// import { useMediaQuery } from 'react-responsive'
-// import './nftPage.css'
-
-// function OrbitansDetails() {
-//     const isBigScreen = useMediaQuery({ query: '(min-width: 1224px)' })
-//     const isTablet = useMediaQuery({ query: '(max-width: 1224px)' })
-//     const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
-//     console.log(isBigScreen, isTablet, isMobile);
-//   return (
-//         <div className='other-details'>
-//           <div className='other-details-top-div'>
-//               <div className='other-details-top-div-div'>The Orbitians</div>
-//               <p className='other-details-top-div-p'>Minted On Sep 30, 2022</p>
-//           </div>
-//           <div className='deatils-description'>
-//               <p className='deatils-description-heading'>Description</p>
-//               <p className='deatils-description-deatils'>
-//                     The Orbitians
-//                     is a collection of 10,000 unique NFTs on the Ethereum blockchain,
-
-//                     There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians.
-
-//                     They live in a metal space machines, high up in the sky and only have one foot on Earth.
-//                     These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.
-//               </p>
-//           </div>
-//         </div>
-//   )
-// }
-
-// export default OrbitansDetails
-
-import React, { useEffect } from "react";
+import React from "react";
 import topCreators from "../../topCreators";
+import MoreNftsCard from "../commons/moreNftsCard";
 
 function Orbitians() {
   return (
@@ -148,6 +116,134 @@ function Orbitians() {
           >
             Details
           </p>
+
+          <div className="nft-artist-timer-mobile">
+            <div
+              style={{
+                padding: "30px",
+                borderRadius: "20px",
+                backgroundColor: "#3B3B3B",
+                width: "82%",
+                marginLeft: "auto",
+              }}
+            >
+              <p
+                style={{
+                  fontSize: "12px",
+                  color: "white",
+                  marginBottom: "-8px",
+                }}
+              >
+                Auction &nbsp;ends &nbsp;in&nbsp;:
+              </p>
+              <div style={{ display: "flex", flexDirection: "row" }}>
+                <div>
+                  <p
+                    style={{
+                      fontSize: "38px",
+                      color: "white",
+                      fontWeight: "bold",
+                      marginBottom: "-8px",
+                    }}
+                  >
+                    59
+                  </p>
+                  <p
+                    style={{
+                      fontSize: "12px",
+                      color: "white",
+                      marginBottom: "0px",
+                    }}
+                  >
+                    Hours
+                  </p>
+                </div>
+                <p
+                  style={{
+                    fontSize: "34px",
+                    color: "white",
+                    marginBottom: "0px",
+                    marginLeft: "15px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  :
+                </p>
+                <div>
+                  <p
+                    style={{
+                      fontSize: "38px",
+                      color: "white",
+                      fontWeight: "bold",
+                      marginBottom: "-8px",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    59
+                  </p>
+                  <p
+                    style={{
+                      fontSize: "12px",
+                      color: "white",
+                      marginBottom: "0px",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    Minutes
+                  </p>
+                </div>
+                <p
+                  style={{
+                    fontSize: "34px",
+                    color: "white",
+                    marginBottom: "0px",
+                    marginLeft: "15px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  :
+                </p>
+                <div>
+                  <p
+                    style={{
+                      fontSize: "38px",
+                      color: "white",
+                      fontWeight: "bold",
+                      marginBottom: "-8px",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    59
+                  </p>
+                  <p
+                    style={{
+                      fontSize: "12px",
+                      color: "white",
+                      marginBottom: "0px",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    Seconds
+                  </p>
+                </div>
+              </div>
+              <button
+                style={{
+                  width: "100%",
+                  height: "60px",
+                  backgroundColor: "#A259FF",
+                  borderRadius: "20px",
+                  color: "white",
+                  fontWeight: "bold",
+                  border: "0px",
+                  marginTop: "30px",
+                  fontSize: "16px",
+                }}
+              >
+                Place Bid
+              </button>
+            </div>
+          </div>
           <div
             style={{ display: "flex", flexDirection: "row", marginTop: "10px" }}
           >
@@ -284,14 +380,7 @@ function Orbitians() {
             </div>
           </div>
         </div>
-        <div
-          style={{
-            backgroundColor: "#2B2B2B",
-
-            paddingTop: "40px",
-            width: "40%",
-          }}
-        >
+        <div className="nft-artist-timer">
           <div
             style={{
               padding: "30px",
@@ -470,99 +559,15 @@ function Orbitians() {
             </div>
           </div>
         </div>
-        <div
-          style={{
-            paddingTop: "60px",
-            display: "grid",
-            width: "99%",
-            gridTemplateColumns: "33% 33% 33%",
-            gap: "2%",
-          }}
-        >
-          {topCreators.map((item, i) => {
+        <div className="nft-artist-card-holder">
+          {topCreators.map((item) => {
+            const { img = "", creatorName = "", totalSales = "" } = item;
             return (
-              <div
-                style={{
-                  backgroundColor: "#3B3B3B",
-                  borderRadius: "20px",
-                }}
-                className="top-craetors-card"
-              >
-                <img
-                  src={item.img}
-                  alt="Image Placeholder"
-                  style={{ width: "100%", height: "65%" }}
-                />
-                <div style={{ padding: "10px 10px 10px 20px" }}>
-                  <p
-                    style={{
-                      fontSize: "22px",
-                      color: "white",
-                      fontWeight: "bold",
-                      marginBottom: "0px",
-                      marginTop: "0px",
-                    }}
-                  >
-                    {item.creatorName}
-                  </p>
-                  <div style={{ display: "flex", flexDirection: "row" }}>
-                    <img
-                      src={item.img}
-                      alt="error"
-                      style={{
-                        width: "24px",
-                        height: "24px",
-                        borderRadius: "50%",
-                      }}
-                    />
-                    <p
-                      style={{
-                        fontSize: "16px",
-                        color: "white",
-                        marginLeft: "12px",
-                        marginTop: "0px",
-                      }}
-                    >
-                      Orbitans
-                    </p>
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      justifyContent: "space-between",
-                      marginBottom: "30px",
-                    }}
-                  >
-                    <div>
-                      <div
-                        style={{
-                          fontSize: "10px",
-                          color: "#858584",
-                        }}
-                      >
-                        Price
-                      </div>
-                      <div style={{ fontSize: "12px", color: "white" }}>
-                        {item.totalSales}
-                      </div>
-                    </div>
-                    <div>
-                      <div
-                        style={{
-                          fontSize: "10px",
-                          color: "#858584",
-                        }}
-                      >
-                        Highest Bid
-                      </div>
-                      <div style={{ fontSize: "12px", color: "white" }}>
-                        1.63 ETH
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <MoreNftsCard
+                img={img}
+                creatorName={creatorName}
+                totalSales={totalSales}
+              />
             );
           })}
         </div>

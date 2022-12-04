@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./landingPage.css";
+import { IoRocketOutline } from "react-icons/io5";
 
 function Heading() {
   return (
@@ -15,6 +16,7 @@ function Heading() {
         </div>
         <Link to="/loginsignup" style={{ textDecoration: "none" }}>
           <button className="top-headers-content-button">
+            <IoRocketOutline />
             <span>Get Started</span>
           </button>
         </Link>
